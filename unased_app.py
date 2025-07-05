@@ -364,8 +364,8 @@ def run():
     # ----------------- Load Model & Evaluator -----------------
     @st.cache_resource
     def load_model_and_tokenizer():
-        tokenizer = BertTokenizer.from_pretrained("Aditya11031/Bert-Uncased-Gemini", local_files_only=True)
-        model = BertForSequenceClassification.from_pretrained("Aditya11031/Bert-Uncased-Gemini", local_files_only=True)
+        tokenizer = BertTokenizer.from_pretrained("Aditya11031/Bert-Uncased-Gemini")
+        model = BertForSequenceClassification.from_pretrained("Aditya11031/Bert-Uncased-Gemini")
         model.eval()
         return model, tokenizer
 
