@@ -363,8 +363,8 @@ def run():
     # ----------------- Load Model & Evaluator -----------------
     @st.cache_resource
     def load_model_and_tokenizer():
-        tokenizer = DistilBertTokenizer.from_pretrained("distill_Model_folder", local_files_only=True)
-        model = DistilBertForSequenceClassification.from_pretrained("distill_Model_folder", local_files_only=True)
+        tokenizer = DistilBertTokenizer.from_pretrained("Aditya11031/Distill-Bert", local_files_only=True)
+        model = DistilBertForSequenceClassification.from_pretrained("Aditya11031/Distill-Bert", local_files_only=True)
         model.eval()
         return model, tokenizer
 
