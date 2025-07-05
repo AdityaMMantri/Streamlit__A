@@ -1,0 +1,14 @@
+streamlit
+torch
+transformers
+sentence-transformers
+scikit-learn
+pandas
+nltk
+numpy
+matplotlib
+seaborn
+plotly
+pillow
+requests
+tqdm
