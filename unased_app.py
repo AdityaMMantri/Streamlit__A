@@ -388,8 +388,8 @@ def run():
     mismatch_evaluator, skill_evaluator = load_evaluators()
 
     # ----------------- Gemini API Configuration -----------------
-    GEMINI_API_KEY = "AIzaSyC4fcVRMlpkP2Vkwci_Ul5Qg_O1_Iw1Dts"  # Get from environment variable
-    GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent"
+    GEMINI_API_KEY = ""  # Get from environment variable
+    GEMINI_API_URL = ""
 
     def call_gemini_api(prompt, max_retries=3):
         """
@@ -899,3 +899,4 @@ def run():
         if st.button("🔄 Analyze Another Job"):
             st.session_state[session_key] = False
             st.rerun()
+
